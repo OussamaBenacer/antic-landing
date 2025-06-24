@@ -36,6 +36,7 @@
   @media (width >= 40rem) {
     max-width: calc(100% - 1rem);
   }
+  
   @media (width >= 48rem) {
     padding-inline: 1rem;
     max-width: 45rem;

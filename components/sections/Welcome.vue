@@ -1,7 +1,4 @@
-
-
 <template>
-  
   <Header />
   <section id="welcome" class="my-container h-svh">
     <div
@@ -35,7 +32,7 @@
         <a
           href="#rooms"
           class="grid text-white border-2 rounded-full max-lg:mx-auto lg:text-terracotta place-content-center size-13"
-          ><IconsDown
+          ><IconsChevronDown
         /></a>
       </div>
     </div>

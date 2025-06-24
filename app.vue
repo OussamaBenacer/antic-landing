@@ -1,6 +1,7 @@
 <template>
-  <div >
+  <div>
     <SectionsWelcome />
-    <SectionsRooms />
+    <!-- <SectionsRooms /> -->
+    <SectionsServices />
   </div>
 </template>

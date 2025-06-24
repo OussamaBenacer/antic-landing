@@ -1,10 +1,23 @@
+<script setup>
+defineProps({
+  width: {
+    type: String,
+    default: "18",
+  },
+  className: {
+    type: String,
+    default: "",
+  },
+});
+</script>
 <template>
   <svg
-    width="17"
-    height="9"
+    :width="width"
+    :height="width / 2"
     viewBox="0 0 17 9"
     fill="none"
     xmlns="http://www.w3.org/2000/svg"
+    :class="className"
   >
     <path
       fill-rule="evenodd"

@@ -1,5 +1,4 @@
 <script setup>
-
 const services = [
   {
     id: 1,
@@ -29,14 +28,14 @@ const services = [
 </script>
 
 <template>
-  <section id="services" class="py-12 bg-light">
-    <div class="my-container lg:grid lg:grid-cols-2 lg:gap-12">
+  <section id="services" class="py-12 sm:pt-16 sm:pb-17 bg-light">
+    <div class="container-custom lg:grid lg:grid-cols-2 lg:gap-12">
       <div class="space-y-8 max-lg:mb-10">
-        <h1
-          class="text-4xl tracking-tight text-brown-dark font-normal font-merriweather max-w-2xs sm:text-5xl sm:max-w-md lg:text-[3.5rem]"
+        <h2
+          class="text-4xl text-brown-dark font-merriweather max-w-2xs sm:text-5xl sm:max-w-md lg:text-[3.5rem]"
         >
           We stay by your side to design your projects
-        </h1>
+        </h2>
 
         <SpecialLink>Find out more</SpecialLink>
       </div>

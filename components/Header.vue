@@ -4,8 +4,8 @@ const navLinks = ["products", "rooms", "services", "inspirations"];
 </script>
 
 <template>
-    <header class="absolute w-full -translate-x-1/2 top-8 left-1/2">
-    <div class="flex items-center gap-6 xl:gap-8 my-container">
+  <header class="absolute w-full -translate-x-1/2 top-8 left-1/2">
+    <div class="flex items-center gap-6 xl:gap-8 container-custom">
       <h2
         class="text-4xl font-bold text-white lg:text-terracotta font-merriweather"
       >
@@ -29,8 +29,10 @@ const navLinks = ["products", "rooms", "services", "inspirations"];
       <button class="lg:hidden ms-auto cursor-pointer">
         <IconsMenu />
       </button>
-      
-      <button class="max-lg:hidden absolute top-1/2 right-10 -translate-y-1/2 cursor-pointer">
+
+      <button
+        class="max-lg:hidden absolute top-1/2 right-10 -translate-y-1/2 cursor-pointer"
+      >
         <IconsContact />
       </button>
     </div>

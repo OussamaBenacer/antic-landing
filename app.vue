@@ -1,8 +1,9 @@
 <template>
   <div>
     <SectionsWelcome />
-    <!-- <SectionsRooms /> -->
+    <SectionsRooms />
     <SectionsServices />
+    <!-- <SectionsInspirations /> -->
     <SectionsFooter />
   </div>
 </template>

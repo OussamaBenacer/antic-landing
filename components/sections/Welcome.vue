@@ -1,8 +1,11 @@
+<script setup>
+const scrollDown = () => window.scrollBy(0, window.innerHeight);
+</script>
 <template>
   <Header />
   <section id="welcome" class="my-container h-svh">
     <div
-      class="absolute top-0 right-0 h-full w-full lg:w-1/2 bg-[url('~/assets/images/welcome-image.jpg')] bg-size-[100%_100%] lg:bg-size-[110%_135%] lg:bg-[0%_40%] bg-no-repeat -z-1"
+      class="absolute top-0 right-0 h-full w-full lg:w-1/2 bg-brown-light bg-[url('/images/welcome-img.jpg')] bg-size-[100%_100%] lg:bg-size-[110%_135%] lg:bg-[0%_40%] bg-no-repeat -z-1"
     />
     <div
       class="absolute top-0 left-0 w-1/2 h-full max-lg:hidden bg-light -z-1"
@@ -29,11 +32,12 @@
           </p>
         </div>
 
-        <a
-          href="#rooms"
-          class="grid text-white border-2 rounded-full max-lg:mx-auto lg:text-terracotta place-content-center size-13"
-          ><IconsChevronDown
-        /></a>
+        <button
+          class="grid text-white border-2 rounded-full max-lg:mx-auto lg:text-terracotta cursor-pointer place-content-center size-13"
+          @click="scrollDown"
+        >
+          <IconsChevronDown />
+        </button>
       </div>
     </div>
   </section>

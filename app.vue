@@ -3,5 +3,6 @@
     <SectionsWelcome />
     <!-- <SectionsRooms /> -->
     <SectionsServices />
+    <SectionsFooter />
   </div>
 </template>

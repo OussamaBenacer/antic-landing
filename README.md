@@ -1,75 +1,43 @@
-# Nuxt Minimal Starter
+# ✨ Antic — Elegant Landing Page for Interiors & Exteriors
 
-Look at the [Nuxt documentation](https://nuxt.com/docs/getting-started/introduction) to learn more.
+This is a fully responsive and beautifully designed landing page for a modern interior and exterior design brand, **Antic**. Built with **Nuxt 3**, **Tailwind CSS**, and **Swiper.js**, the page emphasizes elegant visuals, intuitive layout, and clean typography.
 
-## Setup
+---
 
-Make sure to install dependencies:
+## 🔗 Live Demo
 
-```bash
-# npm
-npm install
+👉 [antic-landing.vercel.app](https://antic-landing.vercel.app)
 
-# pnpm
-pnpm install
+Visit the live version to experience the design and layout in action.
 
-# yarn
-yarn install
+---
 
-# bun
-bun install
-```
+## 🌟 Features
 
-## Development Server
+- 📱 Fully responsive (mobile-first layout)
+- 🖼️ Hero section with stunning imagery
+- 🛏️ "Find Your Room" section with interactive cards
+- 🔄 **Swiper integration** for smooth carousels/sliders
+- 🧰 Service highlights (Concept Store, Installation, Click & Collect)
+- 🖼️ Inspirations gallery with styled grid layout
+- 💨 Built using Tailwind CSS utility classes
 
-Start the development server on `http://localhost:3000`:
+---
 
-```bash
-# npm
-npm run dev
+## 🧰 Tech Stack
 
-# pnpm
-pnpm dev
+- [Nuxt 3](https://nuxt.com/)
+- [Tailwind CSS](https://tailwindcss.com/)
+- [Swiper.js](https://swiperjs.com/) — for sliders/carousels
+- [Vite](https://vitejs.dev/) — fast build tool (used by default in Nuxt 3)
 
-# yarn
-yarn dev
+---
 
-# bun
-bun run dev
-```
+## 📦 Getting Started
 
-## Production
-
-Build the application for production:
+### 1. Clone the repo
 
 ```bash
-# npm
-npm run build
-
-# pnpm
-pnpm build
-
-# yarn
-yarn build
-
-# bun
-bun run build
+git clone https://github.com/OussamaBenacer/antic-landing.git
+cd antic-landing
 ```
-
-Locally preview production build:
-
-```bash
-# npm
-npm run preview
-
-# pnpm
-pnpm preview
-
-# yarn
-yarn preview
-
-# bun
-bun run preview
-```
-
-Check out the [deployment documentation](https://nuxt.com/docs/getting-started/deployment) for more information.

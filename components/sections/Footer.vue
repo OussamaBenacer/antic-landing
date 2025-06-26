@@ -41,7 +41,7 @@ const footerLinks = [
 </script>
 <template>
   <footer id="footer" class="py-12 bg-light lg:pt-18 lg:pb-16">
-    <div class="container-custom">
+    <div class="container-auto">
       <div
         class="mb-10 space-y-10 lg:items-start lg:justify-between lg:flex lg:mb-12"
       >

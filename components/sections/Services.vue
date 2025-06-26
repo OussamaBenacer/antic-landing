@@ -29,7 +29,7 @@ const services = [
 
 <template>
   <section id="services" class="py-12 sm:pt-16 sm:pb-17 bg-light">
-    <div class="container-custom lg:grid lg:grid-cols-2 lg:gap-12">
+    <div class="container-auto lg:grid lg:grid-cols-2 lg:gap-12">
       <div class="space-y-8 max-lg:mb-10">
         <h2
           class="text-4xl text-brown-dark font-merriweather max-w-2xs sm:text-5xl sm:max-w-md lg:text-[3.5rem]"

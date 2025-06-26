@@ -3,7 +3,7 @@ const scrollDown = () => window.scrollBy(0, window.innerHeight);
 </script>
 <template>
   <Header />
-  <section id="welcome" class="container-custom h-svh">
+  <section id="welcome" class="container-auto h-svh">
     <div
       class="absolute top-0 right-0 h-full w-full lg:w-1/2 bg-brown-light bg-[url('/images/welcome-img.jpg')] bg-size-[100%_100%] lg:bg-size-[110%_135%] lg:bg-[0%_40%] bg-no-repeat -z-1"
     />

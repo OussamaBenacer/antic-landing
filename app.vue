@@ -3,7 +3,7 @@
     <SectionsWelcome />
     <SectionsRooms />
     <SectionsServices />
-    <!-- <SectionsInspirations /> -->
+    <SectionsInspirations />
     <SectionsFooter />
   </div>
 </template>

@@ -5,7 +5,7 @@ const navLinks = ["products", "rooms", "services", "inspirations"];
 
 <template>
   <header class="absolute w-full -translate-x-1/2 top-8 left-1/2">
-    <div class="flex items-center gap-6 xl:gap-8 container-custom">
+    <div class="flex items-center gap-6 xl:gap-8 container-auto">
       <h2
         class="text-4xl font-bold text-white lg:text-terracotta font-merriweather"
       >

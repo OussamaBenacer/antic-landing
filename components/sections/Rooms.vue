@@ -53,6 +53,7 @@ const nextSlide = () => {
               <NuxtImg
                 src="/images/rooms/bedroom.png"
                 alt="living room"
+                placeholder
                 class="absolute bottom-0 object-cover w-22/10 h-25/10"
               />
             </div>
@@ -70,6 +71,7 @@ const nextSlide = () => {
               <NuxtImg
                 src="/images/rooms/living-room.jpg"
                 alt="living room"
+                placeholder
                 class="object-cover object-center size-full"
               />
             </div>
@@ -87,6 +89,7 @@ const nextSlide = () => {
               <NuxtImg
                 src="/images/rooms/bedroom.png"
                 alt="living room"
+                placeholder
                 class="absolute bottom-0 object-cover w-22/10 h-25/10"
               />
             </div>
@@ -104,6 +107,7 @@ const nextSlide = () => {
               <NuxtImg
                 src="/images/rooms/living-room.jpg"
                 alt="living room"
+                placeholder
                 class="object-cover object-center size-full"
               />
             </div>

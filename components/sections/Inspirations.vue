@@ -10,7 +10,6 @@ const currentIndex = computed(() => {
   const index = swiperRef.value?.realIndex + 1;
   return formatNumber(index);
 });
-const total = 4;
 
 const handleSwiper = (swiper) => {
   swiperRef.value = swiper;
@@ -18,6 +17,33 @@ const handleSwiper = (swiper) => {
 
 const nextSlide = () => swiperRef.value?.slideNext();
 const prevSlide = () => swiperRef.value?.slidePrev();
+
+const items = [
+  {
+    id: 1,
+    title: "Chair",
+    imgSrc: "/images/inspirations/chair.jpg",
+    objectPosition: "object-bottom",
+  },
+  {
+    id: 2,
+    title: "Cooked",
+    imgSrc: "/images/inspirations/cooked.jpg",
+    objectPosition: "object-center",
+  },
+  {
+    id: 3,
+    title: "Living room",
+    imgSrc: "/images/inspirations/living-room.jpg",
+    objectPosition: "object-center",
+  },
+  {
+    id: 4,
+    title: "Tables",
+    imgSrc: "/images/inspirations/tables.jpg",
+    objectPosition: "object-center",
+  },
+];
 </script>
 <template>
   <section id="inspirations" class="py-12 bg-white sm:pt-16 sm:pb-17">
@@ -42,7 +68,7 @@ const prevSlide = () => swiperRef.value?.slidePrev();
             type="text"
             class="block w-full max-sm:mb-4 h-12.5 p-4 lg:w-75 rounded-xs text-lg placeholder:text-brown-light"
             placeholder="email@address.com"
-          >
+          />
 
           <button
             class="max-w-full py-3 text-center text-white cursor-pointer bg-brown-dark max-sm:w-95/100 sm:w-60 lg:w-36 font-karla"
@@ -55,34 +81,23 @@ const prevSlide = () => swiperRef.value?.slidePrev();
       <!-- swiper slides in tablet and desktop  -->
       <div class="mb-10 max-sm:hidden sm:container-start">
         <Swiper
-          :space-between="30"
           slides-per-view="auto"
+          :space-between="30"
           grab-cursor
           class="!pe-8"
           loop
           @swiper="handleSwiper"
         >
-          <SwiperSlide class="!w-fit">
-            <div class="bg-brown-light aspect-145/175 w-114">
-              <NuxtImg />
-            </div>
-          </SwiperSlide>
-
-          <SwiperSlide class="!w-fit">
-            <div class="bg-brown-light aspect-145/175 w-114">
-              <NuxtImg />
-            </div>
-          </SwiperSlide>
-
-          <SwiperSlide class="!w-fit">
-            <div class="bg-brown-light aspect-145/175 w-114">
-              <NuxtImg />
-            </div>
-          </SwiperSlide>
-
-          <SwiperSlide class="!w-fit">
-            <div class="bg-brown-light aspect-145/175 w-114">
-              <NuxtImg />
+          <SwiperSlide v-for="item in items" :key="item.id" class="!w-fit">
+            <div
+              class="bg-brown-light aspect-145/175 w-114 overflow-hidden relative"
+            >
+              <NuxtImg
+                :src="item.imgSrc"
+                :alt="item.title"
+                placeholder
+                :class="`size-full object-cover ${item.objectPosition}`"
+              />
             </div>
           </SwiperSlide>
         </Swiper>
@@ -123,7 +138,7 @@ const prevSlide = () => swiperRef.value?.slidePrev();
             </button>
           </div>
           <div class="text-lg text-brown-light">
-            {{ currentIndex }} / {{ formatNumber(total) }}
+            {{ currentIndex }} / {{ formatNumber(items.length) }}
           </div>
         </div>
       </div>
@@ -131,32 +146,16 @@ const prevSlide = () => swiperRef.value?.slidePrev();
 
     <!-- mobile slides   -->
     <div class="grid grid-cols-2 gap-5 container-auto sm:hidden">
-      <div>
+      <div v-for="item in items" :key="item.id">
         <div class="max-sm:mb-4 bg-brown aspect-145/175">
-          <NuxtImg />
+          <NuxtImg
+            :src="item.imgSrc"
+            :alt="item.title"
+            placeholder
+            :class="`size-full object-cover ${item.objectPosition}`"
+          />
         </div>
-        <p class="text-[#121212] sm:hidden">Chair</p>
-      </div>
-
-      <div>
-        <div class="max-sm:mb-4 bg-brown aspect-145/175">
-          <NuxtImg />
-        </div>
-        <p class="text-[#121212] sm:hidden">Chair</p>
-      </div>
-
-      <div>
-        <div class="max-sm:mb-4 bg-brown aspect-145/175">
-          <NuxtImg />
-        </div>
-        <p class="text-[#121212] sm:hidden">Chair</p>
-      </div>
-
-      <div>
-        <div class="max-sm:mb-4 bg-brown aspect-145/175">
-          <NuxtImg />
-        </div>
-        <p class="text-[#121212] sm:hidden">Chair</p>
+        <p class="text-[#121212]">{{ item.title }}</p>
       </div>
     </div>
   </section>
